@@ -1,0 +1,34 @@
+.login{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10%;
+    width: 420px;
+    position: relative;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.login h1{
+    font-size: 3.5rem;
+
+}
+.login .container{
+    margin-top: 50px;
+}
+
+.login .container .form-group label{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.login .container .form-group input{
+   height: 3.5rem;
+   margin-top: 1rem;
+}
+
+.login .container .text-center button{
+    font-size: 1.5rem;
+    width: 120px;
+}
+.login .container .text-center button:hover{
+    background: #03A9F4;
+}

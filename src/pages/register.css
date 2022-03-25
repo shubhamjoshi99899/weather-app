@@ -1,0 +1,34 @@
+ .register{
+    margin: auto;
+  padding: 10px;
+  margin-top: 2%;
+    width: 620px;
+    position: relative;
+    margin-bottom: 12px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.register h1{
+    font-size: 3.5rem;
+
+}
+.register .container{
+    margin-top: 20px;
+}
+
+.register .container .form-group label{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.register .container .form-group input{
+   height: 3.5rem;
+   margin-top: 1rem;
+}
+
+.register .container .text-center button{
+    font-size: 1.5rem;
+    width: 120px;
+}
+.register .container .text-center button:hover{
+    background: #03A9F4;
+}

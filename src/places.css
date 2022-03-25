@@ -1,0 +1,230 @@
+/*..................Places starts.....................*/
+.places-container{
+    margin-top: 10rem;
+  }
+  .places-container h1{
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card{
+      background: transparent;
+      margin-top: 20px;
+      
+  }
+  
+  .tile
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width:380px;
+    height:380px;
+    background-color:#333333;
+    display:inline-block;
+    background-size:cover;
+    position:relative;
+    cursor:pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+    overflow:hidden;
+    color:white;
+    font-family:'Roboto';
+    
+  }
+  .tile img
+  {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transition: all 0.4s ease-out;
+  }
+  .tile .text
+  {
+  /*   z-index:99; */
+    position:absolute;
+    padding:30px;
+    height:calc(100% - 60px);
+  }
+  .tile h1
+  { color: rgb(0, 0, 0);
+    font-size: 3.8rem;
+    width: 100%;
+    transition: all 0.4s ease-out;
+    font-weight:300;
+    margin:0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  }
+  .tile  :hover h1{
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+  }
+  .tile h2
+  {
+    font-size: 2.8rem;
+    color: var(--bgcolor);
+    font-weight:100;
+    margin:20px 0 0 0;
+    font-style:italic;
+    transform: translateX(200px);
+  }
+  .tile p
+  {
+    font-size: 1rem;
+    font-weight:300;
+    margin:20px 0 0 0;
+    line-height: 25px;
+  /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+  }
+  .tile p ul li{
+    font-size: 1.7rem;
+  }
+  .animate-text
+  {
+    opacity:0;
+    transition: all 0.6s ease-in-out;
+  }
+  .tile:hover
+  {
+    color: #f1f1f1;
+  /*   background-color:#99aeff; */
+  box-shadow: 0px 35px 77px -17px rgba(235, 235, 235, 0.64);
+    transform:scale(1.05);
+    padding: 10px;
+    z-index: 1;
+  
+  }
+  .tile:hover img 
+  {
+    opacity: 0.2;
+  }
+  .tile:hover .animate-text
+  {
+    transform:translateX(0);
+    opacity:1;
+  }
+  
+  .tile:hover img h2{
+    font-display: 3.2rem;
+    color: var(--bgcolor);
+  }
+  
+  .tile:hover span
+  {
+    opacity:1;
+    transform:translateY(0px);
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .wrap {
+     flex-direction: column;
+      width:400px;
+    }
+  }
+  .tile .custom-btn {
+      width: 130px;
+      height: 40px;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      margin-top: 1px;
+      margin-left: -90px;
+      padding:  25px;
+      font-family: 'Lato', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+       box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+      outline: none;
+      transform: translateX(50px);
+      transition-delay: 0.3s;
+    }
+    .tile .btn-3 {
+      background: rgb(0,172,238);
+      background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+      width: 150px;
+      height: 40px;
+      font-size: 2.0rem;
+      line-height: 42px;
+      opacity: 0;
+      padding: 0;
+      border: none;
+      
+    }
+    .tile .btn-3 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .tile .btn-3:before,
+    .tile .btn-3:after {
+      position: absolute;
+      content: "";
+      right: 10px;
+      top: 0;
+       background: rgba(2,126,251,1);
+      transition: all 0.3s ease;
+    }
+    .tile .btn-3:before {
+      height: 0%;
+      width: 2px;
+    }
+    .tile .btn-3:after {
+      width: 0%;
+      height: 2px;
+    }
+    .tile :hover .btn-3{
+       background: white;
+      box-shadow: none;
+      margin-left: 10%;
+      opacity: 1;
+    }
+    .tile .btn-3:hover:before {
+      height: 100%;
+    }
+    .tile .btn-3:hover:after {
+      width: 100%;
+    }
+    .tile .btn-3 span:hover{
+       color: rgba(2,126,251,1);
+    }
+    .tile .btn-3 span:before,
+    .tile .btn-3 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+       background: rgba(2,126,251,1);
+      transition: all 0.3s ease;
+    }
+    .tile .btn-3 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .tile .btn-3 span:after {
+      width: 0%;
+      height: 2px;
+    }
+    .tile .btn-3 span:hover:before {
+      height: 100%;
+    }
+    .tile .btn-3 span:hover:after {
+      width: 100%;
+    }
+    
+  /*..................places ends.....................*/
+  
